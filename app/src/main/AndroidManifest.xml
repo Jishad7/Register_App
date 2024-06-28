@@ -13,6 +13,18 @@
         android:theme="@style/Theme.RegisterApp"
         tools:targetApi="31">
         <activity
+            android:name=".SuccessLogin"
+            android:exported="false" />
+        <activity
+            android:name=".j"
+            android:exported="false" />
+        <activity
+            android:name=".Logpage"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
