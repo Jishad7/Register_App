@@ -3,8 +3,11 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="50px"
-    android:background="@drawable/backgrnd"
     xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/aqw"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,8 +16,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/uname"
-        android:textColor="@color/white"/>
+        android:id="@+id/uname"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,7 +26,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/pass"
-        android:textColor="@color/white"
         android:inputType="textPassword"/>
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"

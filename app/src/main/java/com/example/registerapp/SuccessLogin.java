@@ -2,6 +2,7 @@ package com.example.registerapp;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -36,12 +37,16 @@ public class SuccessLogin extends AppCompatActivity {
                 String getAdmn=e2.getText().toString();
                 String getSys=e3.getText().toString();
                 String getDept=e4.getText().toString();
-                Toast.makeText(getApplicationContext(),getName+getAdmn+getSys+getDept,Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),getName+" "+getAdmn+" "+getSys+"\n"+getDept,Toast.LENGTH_LONG).show();
             }
         });
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                SharedPreferences preference =getSharedPreferences("login",MODE_PRIVATE);
+                SharedPreferences.Editor editor= preference.edit();
+                editor.clear();
+                editor.apply();
                 Intent i1=new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(i1);
             }
