@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:text="login"
         android:textColor="@color/white"
-        android:background="@drawable/bckgnd"
+        android:background="#2196F3"
         android:layout_margin="30px"
         android:id="@+id/logbtn"/>
 </LinearLayout>
